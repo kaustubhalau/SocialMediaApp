@@ -32,7 +32,8 @@ const Auth = () => {
 
   // handle Change in input
   const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
+    //WE USED THIS [e.target.name]: e.target.value SO THAT WE CAN USE THIS FUNCTION FOR EVERY INPUT OTHERWISE WE HAVE TO MAKE ONE FOR EVERY INPUT
+    setData({ ...data, [e.target.name]: e.target.value }); 
   };
 
   // Form Submission
@@ -56,7 +57,7 @@ const Auth = () => {
         <img src={Logo} alt="" />
 
         <div className="Webname">
-          <h1>ZKC Media</h1>
+          <h1>Codeial</h1>
           <h6>Explore the ideas throughout the world</h6>
         </div>
       </div>
